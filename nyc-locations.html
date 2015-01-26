@@ -11,12 +11,25 @@
   <body>
     <header class='header'>
       <img src="">
-      <ul>
-        <li>About</li>
-      </ul>
+      <nav>
+        <ul>
+          <li>About</li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <h1>New York City</h1>
+      <section>
+        <h1>New York City</h1>
+        <h2>Visit another city:</h2>
+        <select id="city">
+          <option value ="seattle-locations">Seattle, WA</option>
+          <option value="nyc-locations">New York, NY</option>
+          <option value="portland-locations">Portland, OR</option>
+          <option value="austin-locations">Austin, TX</option>
+          <option value="asheville-locations">Asheville, NC</option>
+        </select>
+        <button id="submit">Go!</button>
+      </section>
       <section class='location-info'>
         <img src="">
         <h1>Location</h1>
@@ -25,15 +38,16 @@
           <li>Tag 2</li>
         </ul>
         <p>This is a review of a location</p>
+        <button id="expand">show/hide</button>
       </section>
     </main>
-    <section class='filters'>
+    <section class='filters' id="filterList">
       <h1>Filter locations:</h1>
       <input type='checkbox'>Restaurants</input>
       <input type='checkbox'>Landmarks</input>
       <input type='checkbox'>Venues</input>
       <input type='checkbox'>Outdoors</input>
-      <button type='button'>Apply</button>
-    </section> 
+      <button type='button' id="filterButton">Apply</button>
+    </section>
   </body>
 </html>
