@@ -1,11 +1,9 @@
 // Home page---------------------------------
-var $city = $('#city').val();
-$('#submit').on('click', selectCity, false)
+$(document).ready(function() {
+  $('#submit').on('click', function() {
+    window.location.href = ($('#city').val() + ".html");
+});
 
-
-var selectCity = function() {
-  window.location.href = ($city+".html") 
-};
 
 
 // City Page------------------------------------
@@ -15,3 +13,4 @@ var selectCity = function() {
 
 
 
+});
