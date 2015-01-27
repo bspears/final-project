@@ -48,8 +48,8 @@ $(document).ready(function() {
     $('.location-info').show().removeClass('wanted1 wanted2 wanted3 wanted4');
   });   
 
-  $('#gasworksexpand').on('click', function() {
-      $('#gasworksdetails').toggleClass('showDetail');
+  $('#gasworksExpand').on('click', function() {
+      $('#gasworksDetails').toggleClass('showDetail');
         $('.locationDetails').hide();
         $('.showDetail').show();
 
