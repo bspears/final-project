@@ -30,16 +30,52 @@
         </select>
         <button id="submit">Go!</button>
       </section>
-      <section class='location-info'>
+      <section class='location-info landmark outdoor'>
         <img src="">
-        <h1>Location</h1>
+        <h1>Central Park</h1>
         <ul>
-          <li>Tag 1</li>
-          <li>Tag 2</li>
+          <li>Landmark</li>
+          <li>Outdoor</li>
         </ul>
         <p>This is a teaser description</p>
-        <button class="expand">show/hide</button>
-        <section class="locationDetails">
+        <button class="expand" id='centralParkExpand'>show/hide</button>
+        <section class="locationDetails" id='centralParkDetails'>
+          <p>This is the full description</p>
+          <address>Here is the address</address>
+          <form>
+            <p>Comment:</p>
+            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
+            <button class="commentSubmit">Submit</button>
+          </form>
+        </section>
+      </section>
+      <section class='location-info venue'>
+        <img src="">
+        <h1>Apollo Theater</h1>
+        <ul>
+          <li>Venue</li>
+        </ul>
+        <p>This is a teaser description</p>
+        <button class="expand" id='apolloExpand'>show/hide</button>
+        <section class="locationDetails" id='apolloDetails'>
+          <p>This is the full description</p>
+          <address>Here is the address</address>
+          <form>
+            <p>Comment:</p>
+            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
+            <button class="commentSubmit">Submit</button>
+          </form>
+        </section>
+      </section>
+      <section class='location-info outdoor'>
+        <img src="">
+        <h1>Bronx Zoo</h1>
+        <ul>
+          <li>Outdoor</li>
+        </ul>
+        <p>This is a teaser description</p>
+        <button class="expand" id='bronxZooExpand'>show/hide</button>
+        <section class="locationDetails" id='bronxZooDetails'>
           <p>This is the full description</p>
           <address>Here is the address</address>
           <form>
@@ -52,11 +88,11 @@
     </main>
     <section class='filters' id="filterList">
       <h1>Filter locations:</h1>
-      <input type='checkbox'>Restaurants</input>
-      <input type='checkbox'>Landmarks</input>
-      <input type='checkbox'>Venues</input>
-      <input type='checkbox'>Outdoors</input>
-      <button type='button' id="filterButton">Apply</button>
+      <input type='checkbox' id='restaurant'>Restaurants</input>
+      <input type='checkbox' id='landmark'>Landmarks</input>
+      <input type='checkbox' id='venue'>Venues</input>
+      <input type='checkbox' id='outdoor'>Outdoor</input>
+      <button type='button' id="filterButton">Clear Selections</button>
     </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

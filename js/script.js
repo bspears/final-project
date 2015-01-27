@@ -34,8 +34,8 @@ $(document).ready(function() {
     $('.wanted3').show('slow');
     $('.wanted4').show('slow');
   });
-     $('#outdoors').on('click', function(){
-    $('.outdoors').toggleClass('wanted4');
+     $('#outdoor').on('click', function(){
+    $('.outdoor').toggleClass('wanted4');
     $('.location-info').hide();
     $('.wanted1').show('slow');
     $('.wanted2').show('slow');
@@ -48,17 +48,105 @@ $(document).ready(function() {
     $('.location-info').show().removeClass('wanted1 wanted2 wanted3 wanted4');
   });   
 
+
+//Seattle listeners-----------------------------------------
   $('#gasworksExpand').on('click', function() {
-      $('#gasworksDetails').toggleClass('showDetail');
-        $('.locationDetails').hide();
-        $('.showDetail').show();
-
-
+    $('#gasworksDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();
   });
 
+  $('#spaceNeedleExpand').on('click', function() {
+    $('#spaceNeedleDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
 
+  $('#pikePlaceExpand').on('click', function() {
+    $('#pikePlaceDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
 
+//Asheville listeners------------------------------------------
 
+  $('#orangePeelExpand').on('click', function() {
+    $('#orangePeelDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();
+  });
+
+  $('#nineMileExpand').on('click', function() {
+    $('#nineMileDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+  $('#gardensExpand').on('click', function() {
+    $('#gardensDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+// Austin listeners ----------------------------------------
+
+  $('#bartonSpringsExpand').on('click', function() {
+    $('#bartonSpringsDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();
+  });
+
+  $('#alamoExpand').on('click', function() {
+    $('#alamoDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+  $('#umlaufExpand').on('click', function() {
+    $('#umlaufDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+// New York listeners----------------------------------------
+
+  $('#centralParkExpand').on('click', function() {
+    $('#centralParkDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();
+  });
+
+  $('#bronxZooExpand').on('click', function() {
+    $('#bronxZooDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+  $('#apolloExpand').on('click', function() {
+    $('#apolloDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+// Portland listeners-------------------------------------------
+
+  $('#crystalBallExpand').on('click', function() {
+    $('#crystalBallDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();
+  });
+
+  $('#irvingStreetExpand').on('click', function() {
+    $('#irvingStreetDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
+
+  $('#saturdayExpand').on('click', function() {
+    $('#saturdayDetails').toggleClass('showDetail');
+    $('.locationDetails').hide();
+    $('.showDetail').show();      
+  });
 
 
 
