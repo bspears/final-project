@@ -38,8 +38,8 @@
           <li>Restaurant</li>
         </ul>
         <p>This is a teaser description</p>
-        <button class="expand">show/hide</button>
-        <section class="locationDetails">
+        <button class="expand" id='spaceNeedleExpand'>show/hide</button>
+        <section class="locationDetails" id='spaceNeedleDetails'>
           <p>This is the full description</p>
           <address>Here is the address</address>
           <form>
@@ -49,11 +49,11 @@
           </form>
         </section>
       </section>
-      <section class='location-info outdoors'>
+      <section class='location-info outdoor'>
         <img src="">
         <h1>Gas Works Park</h1>
         <ul>
-          <li>Outdoors</li>
+          <li>Outdoor</li>
         </ul>
         <p>This is a teaser description</p>
         <button class="expand" id='gasworksExpand'>show/hide</button>
@@ -67,16 +67,16 @@
           </form>
         </section>
       </section>
-      <section class='location-info'>
+      <section class='location-info landmark outdoor'>
         <img src="">
-        <h1>Location</h1>
+        <h1>Pike Place Market</h1>
         <ul>
-          <li>Tag 1</li>
-          <li>Tag 2</li>
+          <li>Landmark</li>
+          <li>Outdoor</li>
         </ul>
         <p>This is a teaser description</p>
-        <button class="expand">show/hide</button>
-        <section class="locationDetails">
+        <button class="expand" id='pikePlaceExpand'>show/hide</button>
+        <section class="locationDetails" id='pikePlaceDetails'>
           <p>This is the full description</p>
           <address>Here is the address</address>
           <form>
@@ -92,7 +92,7 @@
       <input type='checkbox' id='restaurant'>Restaurants</input>
       <input type='checkbox' id='landmark'>Landmarks</input>
       <input type='checkbox' id='venue'>Venues</input>
-      <input type='checkbox' id='outdoors'>Outdoors</input>
+      <input type='checkbox' id='outdoor'>Outdoor</input>
       <button type='button' id="filterButton">Clear Selections</button>
     </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
