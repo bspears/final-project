@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 // City Page------------------------------------
-
+  $('.locationDetails').hide();
 
 
   $('#restaurant').on('click', function(){
@@ -48,6 +48,13 @@ $(document).ready(function() {
     $('.location-info').show().removeClass('wanted1 wanted2 wanted3 wanted4');
   });   
 
+  $('#gasworksexpand').on('click', function() {
+      $('#gasworksdetails').toggleClass('showDetail');
+        $('.locationDetails').hide();
+        $('.showDetail').show();
+
+
+  });
 
 
 
