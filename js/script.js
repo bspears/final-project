@@ -7,24 +7,54 @@ $(document).ready(function() {
 
 
 // City Page------------------------------------
+
+
+
   $('#restaurant').on('click', function(){
-    $('.restaurant').toggleClass('wanted');
+    $('.restaurant').toggleClass('wanted1');
     $('.location-info').hide();
-    $('.wanted').show('slow');
+    $('.wanted1').show('slow');
+    $('.wanted2').show('slow');
+    $('.wanted3').show('slow');
+    $('.wanted4').show('slow');
   });
    $('#landmark').on('click', function(){
-    $('.landmark').toggleClass('wanted');
+    $('.landmark').toggleClass('wanted2');
     $('.location-info').hide();
-    $('.wanted').show('slow');
+    $('.wanted1').show('slow');
+    $('.wanted2').show('slow');
+    $('.wanted3').show('slow');
+    $('.wanted4').show('slow');
   });
     $('#venue').on('click', function(){
-    $('.venue').toggleClass('wanted');
+    $('.venue').toggleClass('wanted3');
     $('.location-info').hide();
-    $('.wanted').show('slow');
+    $('.wanted1').show('slow');
+    $('.wanted2').show('slow');
+    $('.wanted3').show('slow');
+    $('.wanted4').show('slow');
   });
      $('#outdoors').on('click', function(){
-    $('.outdoors').toggleClass('wanted');
+    $('.outdoors').toggleClass('wanted4');
     $('.location-info').hide();
-    $('.wanted').show('slow');
+    $('.wanted1').show('slow');
+    $('.wanted2').show('slow');
+    $('.wanted3').show('slow');
+    $('.wanted4').show('slow');
   });
+
+  $('#filterButton').on('click', function() {
+    $('input:checked').prop('checked', false);
+    $('.location-info').show().removeClass('wanted1 wanted2 wanted3 wanted4');
+  });   
+
+
+
+
+
+
+
+
+
+
 });
