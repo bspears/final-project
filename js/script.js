@@ -5,10 +5,8 @@ $(document).ready(function() {
 });
 
 
-
 // City Page------------------------------------
   $('.locationDetails').hide();
-
 
   $('#restaurant').on('click', function(){
     $('.restaurant').toggleClass('wanted1');
@@ -69,7 +67,6 @@ $(document).ready(function() {
   });
 
 //Asheville listeners------------------------------------------
-
   $('#orangePeelExpand').on('click', function() {
     $('#orangePeelDetails').toggleClass('showDetail');
     $('.locationDetails').hide();
@@ -89,7 +86,6 @@ $(document).ready(function() {
   });
 
 // Austin listeners ----------------------------------------
-
   $('#bartonSpringsExpand').on('click', function() {
     $('#bartonSpringsDetails').toggleClass('showDetail');
     $('.locationDetails').hide();
@@ -109,7 +105,6 @@ $(document).ready(function() {
   });
 
 // New York listeners----------------------------------------
-
   $('#centralParkExpand').on('click', function() {
     $('#centralParkDetails').toggleClass('showDetail');
     $('.locationDetails').hide();
@@ -129,7 +124,6 @@ $(document).ready(function() {
   });
 
 // Portland listeners-------------------------------------------
-
   $('#crystalBallExpand').on('click', function() {
     $('#crystalBallDetails').toggleClass('showDetail');
     $('.locationDetails').hide();
@@ -147,6 +141,43 @@ $(document).ready(function() {
     $('.locationDetails').hide();
     $('.showDetail').show();      
   });
+
+//Comment section JSON
+  // function submitComment(event) {
+  //   event.preventDefault();
+
+  //   var commentSave = {};
+
+  //   commentSave["commentText"] = $("this.textarea").text();
+
+  //   var commentObj = JSON.stringify(commentSave);
+
+  //   localStorage.setItem(insert, commentObj);
+  // }
+
+  // var insert = function() {
+  //   $("#spaceNeedleComments").append("<li>" + commentObj + "</li>");
+  // }
+
+  // $("#spaceNeedlePost").submit(submitComment);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
