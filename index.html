@@ -4,29 +4,33 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/main.css"> 
   </head>
   <body>
-    <header class="header">
-      <img src="">
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Select your city:</h1>   
-      <select id="city">
-        <option value ="seattle-locations">Seattle, WA</option>
-        <option value="nyc-locations">New York, NY</option>
-        <option value="portland-locations">Portland, OR</option>
-        <option value="austin-locations">Austin, TX</option>
-        <option value="asheville-locations">Asheville, NC</option>
-      </select>
-      <button id="submit">Go!</button>
-    </main>
+    <section class="wrapper">
+      <header class="header">
+        <img src="">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class='homeMain'>
+        <h1>Instant Local</h1>
+        <h2>Select your city:</h2>   
+        <select id="city">
+          <option value ="seattle-locations">Seattle, WA</option>
+          <option value="nyc-locations">New York, NY</option>
+          <option value="portland-locations">Portland, OR</option>
+          <option value="austin-locations">Austin, TX</option>
+          <option value="asheville-locations">Asheville, NC</option>
+        </select>
+        <button id="submit">Go!</button>
+      </main>
+    </section>  
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

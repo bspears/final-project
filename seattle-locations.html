@@ -5,6 +5,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/main.css">  
   </head>
@@ -18,7 +19,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="cityInfo">
         <h1>Seattle</h1>
         <h2>Visit another city:</h2>
         <select id="city">
@@ -30,70 +31,74 @@
         </select>
         <button id="submit">Go!</button>
       </section>
-      <section class='location-info restaurant landmark'>
-        <img src="">
-        <h1>Space Needle</h1>
-        <ul>
-          <li>Landmark</li>
-          <li>Restaurant</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class="expand" id='spaceNeedleExpand'>show/hide</button>
-        <section class="locationDetails" id='spaceNeedleDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
+      <section class='locationsContainer'>
+        <section class='location-info restaurant landmark'>
+          <img class="locationImage" src="img/needle.jpg">
+          <h1>Space Needle</h1>
+          <ul>
+            <li>Landmark</li>
+            <li>Restaurant</li>
+          </ul>
+          <p>This is a teaser description</p>
+          <button class="expand" id='spaceNeedleExpand'>show/hide</button>
+          <section class="locationDetails" id='spaceNeedleDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+            <form>
+              <p>Comment:</p>
+              <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
+              <button class="commentSubmit">Submit</button>
+            </form>
+          </section>
         </section>
-      </section>
-      <section class='location-info outdoor'>
-        <img src="">
-        <h1>Gas Works Park</h1>
-        <ul>
-          <li>Outdoor</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class="expand" id='gasworksExpand'>show/hide</button>
-        <section class="locationDetails" id='gasworksDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
+        <section class='location-info outdoor'>
+          <img src="">
+          <h1>Gas Works Park</h1>
+          <ul>
+            <li>Outdoor</li>
+          </ul>
+          <p>This is a teaser description</p>
+          <button class="expand" id='gasworksExpand'>show/hide</button>
+          <section class="locationDetails" id='gasworksDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+            <form>
+              <p>Comment:</p>
+              <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
+              <button class="commentSubmit">Submit</button>
+            </form>
+          </section>
         </section>
-      </section>
-      <section class='location-info landmark outdoor'>
-        <img src="">
-        <h1>Pike Place Market</h1>
-        <ul>
-          <li>Landmark</li>
-          <li>Outdoor</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class="expand" id='pikePlaceExpand'>show/hide</button>
-        <section class="locationDetails" id='pikePlaceDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
+        <section class='location-info landmark outdoor'>
+          <img src="">
+          <h1>Pike Place Market</h1>
+          <ul>
+            <li>Landmark</li>
+            <li>Outdoor</li>
+          </ul>
+          <p>This is a teaser description</p>
+          <button class="expand" id='pikePlaceExpand'>show/hide</button>
+          <section class="locationDetails" id='pikePlaceDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+            <form>
+              <p>Comment:</p>
+              <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
+              <button class="commentSubmit">Submit</button>
+            </form>
+          </section>
         </section>
-      </section>
+      </section>  
     </main>
     <section class='filters' id="filterList">
       <h1>Filter locations:</h1>
-      <input type='checkbox' id='restaurant'>Restaurants</input>
-      <input type='checkbox' id='landmark'>Landmarks</input>
-      <input type='checkbox' id='venue'>Venues</input>
-      <input type='checkbox' id='outdoor'>Outdoor</input>
-      <button type='button' id="filterButton">Clear Selections</button>
+      <ul>
+        <li><input type='checkbox' id='restaurant'>Restaurants</input></li>
+        <li><input type='checkbox' id='landmark'>Landmarks</input></li>
+        <li><input type='checkbox' id='venue'>Venues</input></li>
+        <li><input type='checkbox' id='outdoor'>Outdoor</input></li>
+        <button type='button' id="filterButton">Clear Selections</button>
+      </ul>  
     </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
