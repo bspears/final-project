@@ -1,0 +1,83 @@
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.wrapper {
+  background-image: url('../img/newyorksky.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+
+.homeMain {
+padding: 15%;
+}
+
+.homeMain h1 {
+  font-size: 3.5em;
+}
+
+.homeMain h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+.header {
+
+}
+
+nav {
+  padding: 0 1% 0 0;
+  background-color: rgba(1, 52, 91, 0.78);
+  margin-right: 5%;
+  float: right;
+}
+
+nav a {
+  color: #fff;
+}
+
+.cityInfo {
+  text-align: center;
+}
+
+.locationImage {
+  border-radius: 10px 0 0 0;
+  width: 25%;
+}
+
+.locationsContainer {
+  margin: 0 15%;
+}
+
+.location-info {
+  border-radius: 10px;
+  background-color: rgba(1, 52, 91, 0.78);
+  margin: 5%;
+}
+
+.location-info h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.filters {
+  border-radius: 10px;
+  position: fixed;
+  top: 25%;
+  right: 5%;
+  padding: 1% 1%;
+  width: 9%;
+  background-color: rgba(93, 100, 101, 0.81);
+}
+
+.filters h1{
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.filters li {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
