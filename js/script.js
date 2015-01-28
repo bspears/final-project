@@ -6,6 +6,21 @@ $(document).ready(function() {
 
 
 // City Page------------------------------------
+  
+
+
+  // var locations 
+
+  function Location(name) {
+    this.name = name;
+  };
+
+  $('.place').text().each(function() {
+    new Location(this.text);
+  });
+
+
+
   $('.locationDetails').hide();
 
   $('#restaurant').on('click', function(){
@@ -161,11 +176,20 @@ $(document).ready(function() {
 
   // $("#spaceNeedlePost").submit(submitComment);
 
+// Favorite list----------------------------------
+
+
+// var favList = {
+//   locations: [];
+// }
+
+// var addFav = function(location) {
+
+// };
 
 
 
-
-
+// $('#spaceNeedleFav').on('click', addFav);
 
 
 

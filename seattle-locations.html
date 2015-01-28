@@ -35,13 +35,13 @@
       <section class='locationsContainer'>
         <section class='location-info restaurant landmark'>
           <img class="locationImage" src="img/needle.jpg">
-          <h1>Space Needle</h1>
+          <h1 class='place' value='Space Needle'>Space Needle</h1>
           <ul>
             <li>Landmark</li>
             <li>Restaurant</li>
           </ul>
           <p>This is a teaser description</p>
-          <button>Add to Favorites</button>
+          <button value='Space Needle'id="spaceNeedleFav">Add to Favorites</button>
           <button class="expand" id='spaceNeedleExpand'>show/hide</button>
           <section class="locationDetails" id='spaceNeedleDetails'>
             <p>This is the full description</p>
@@ -55,7 +55,7 @@
             <li>Outdoor</li>
           </ul>
           <p>This is a teaser description</p>
-          <button>Add to Favorites</button>
+          <button id="gasWorksFav">Add to Favorites</button>
           <button class="expand" id='gasworksExpand'>show/hide</button>
           <section class="locationDetails" id='gasworksDetails'>
             <p>This is the full description</p>
@@ -70,7 +70,7 @@
             <li>Outdoor</li>
           </ul>
           <p>This is a teaser description</p>
-          <button>Add to Favorites</button>
+          <button id="pikePLaceFav">Add to Favorites</button>
           <button class="expand" id='pikePlaceExpand'>show/hide</button>
           <section class="locationDetails" id='pikePlaceDetails'>
             <p>This is the full description</p>
@@ -88,6 +88,10 @@
         <li><input type='checkbox' id='outdoor'>Outdoor</input></li>
         <button type='button' id="filterButton">Clear Selections</button>
       </ul>  
+    </section>
+    <section id="favList" class="favList">
+      <ul id="favItems">
+      </ul>
     </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
