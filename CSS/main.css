@@ -67,17 +67,25 @@ nav a {
   top: 25%;
   right: 5%;
   padding: 1% 1%;
-  width: 9%;
+  width: 7%;
   background-color: rgba(93, 100, 101, 0.81);
+
 }
 
 .filters h1{
   color: #fff;
   font-size: 0.9em;
+
+}
+
+.filters ul{
+  padding: 0px;
 }
 
 .filters li {
   color: #fff;
   display: block;
   margin: 0 auto;
+  list-style-position: inside;
+  width:105px;
 }
