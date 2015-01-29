@@ -189,101 +189,23 @@ var locations = {
   ashevilleBotanicalGardens: new Location('Asheville Botanical Gardens', 'Asheville')
 };
 
-
 var data = {
  "favList": []
 };
-
 
   // var storedFavs = JSON.parse(data['favList']);
 
 var addFav = function(location) {
   var last = data['favList'].length-1;
-  $('#favItems').append('<li>' +  + '</li>');
 };
 
 $('.favButton').on('click', function() {
   data['favList'].push (locations[this.id]);
   addFav(locations[this.id]);
+  $('#favItems').append('<li>' + data.favList[data.favList.length-1].name + '</li>');
 });
 
-// $('#gasFav').on('click', function() {
-//   data['favList'].push (seattle.gasWorksPark);
-//   addFav(seattle.gasWorksPark);
-// });
 
-// $('#pikeFav').on('click', function() {
-//   data['favList'].push (seattle.pikePlaceMarket);
-//   addFav(seattle.pikePlaceMarket);
-// });
-
-
-
-// $('#centralParkFav').on('click', function() {
-//   data['favList'].push (newYork.centralPark);
-//   addFav(newYork.centralPark);
-// });
-
-// $('#apolloTheaterFav').on('click', function() {
-//   data['favList'].push (newYork.apolloTheater);
-//   addFav(newYork.apolloTheater);
-// });
-
-// $('#bronxFav').on('click', function() {
-//   data['favList'].push (newYork.bronxZoo);
-//   addFav(newYork.bronxZoo);
-// });
-
-
-
-// $('#crystalBallroomFav').on('click', function() {
-//   data['favList'].push (portland.crystalBallroom);
-//   addFav(portland.crystalBallroom);
-// });
-
-// $('#irvingStreetKitchenFav').on('click', function() {
-//   data['favList'].push (portland.irvingStreetKitchen);
-//   addFav(portland.irvingStreetKitchen);
-// });
-
-// $('#saturdayMarketFav').on('click', function() {
-//   data['favList'].push (portland.saturdayMarket);
-//   addFav(portland.saturdayMarket);
-// });
-
-
-
-// $('#theOrangePeelFav').on('click', function() {
-//   data['favList'].push (asheville.theOrangePeel);
-//   addFav(asheville.theOrangePeel);
-// });
-
-// $('#nineMileFav').on('click', function() {
-//   data['favList'].push (asheville.nineMile);
-//   addFav(asheville.nineMile);
-// });
-
-// $('#gardenFav').on('click', function() {
-//   data['favList'].push (asheville.ashevilleBotanicalGardens);
-//   addFav(asheville.ashevilleBotanicalGardens);
-// });
-
-
-
-// $('#bartonSpringsPoolFav').on('click', function() {
-//   data['favList'].push (austin.bartonSpringsPool);
-//   addFav(austin.bartonSpringsPool);
-// });
-
-// $('#alamoDrafthouseFav').on('click', function() {
-//   data['favList'].push (austin.alamoDrafthouse);
-//   addFav(austin.alamoDrafthouse);
-// });
-
-// $('#umlaufSculptureFav').on('click', function() {
-//   data['favList'].push (austin.umlaufSculpture);
-//   addFav(austin.umlaufSculpture);
-// });
 
 // $('.favButton').on('click', function() {
 //     var place;
