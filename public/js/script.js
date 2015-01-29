@@ -166,7 +166,6 @@ $(document).ready(function() {
 
 });
 
-
 function Location(name, city) {
   this.name = name;
   this.city = city;
