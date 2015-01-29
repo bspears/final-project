@@ -136,7 +136,8 @@ nav a {
 }
 
 .filters h1{
-  font-size: 1em;
+  font-size: 1.25em;
+  font-family: 'Dosis', sans-serif;
 }
 
 .filters ul{
@@ -147,6 +148,11 @@ nav a {
   display: block;
   margin: 0 auto;
   list-style-position: inside;
+  padding-top: 2%;
+}
+
+#filterButton {
+  margin-top: 7%;
 }
 
 .favs {
@@ -157,6 +163,19 @@ nav a {
   padding: 1% 1%;
   width: 8%;
   background-color: rgba(2, 32, 39, 0.9);
+}
+
+.favs h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.25em;
+}
+
+#favItems {
+  padding: 0px;
+}
+
+#favItems li{
+  border-bottom: 1px solid #FFF;
 }
 
 .favButton {
