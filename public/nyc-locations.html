@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>New York City NY | Instant Local</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">  
+  </head>
+  <body class="newYork">
+    <header class='header'>
+      <img src="">
+      <nav>
+        <ul>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="cityInfo clearfix">
+        <h1>New York City</h1>
+        <section class="anotherCity">
+          <h2>Visit another city:</h2>
+          <select id="city">
+            <option value="" disabled selected>Select a city</option>
+            <option value ="seattle-locations">Seattle, WA</option>
+            <option value="nyc-locations">New York, NY</option>
+            <option value="portland-locations">Portland, OR</option>
+            <option value="austin-locations">Austin, TX</option>
+            <option value="asheville-locations">Asheville, NC</option>
+          </select>
+          <button id="submit">Go!</button>
+        </section>  
+      </section>
+      <section class='locationsContainer clearfix'>
+        <section class='location-info landmark outdoor clearfix'>
+          <img class="locationImage" src="img/centralpark.jpg">
+          <h1>Central Park</h1>
+         <p class="tags">Landmark, Outdoor</p>
+          <p>This is a teaser description</p>
+          <button class='favButton' id='centralParkFav'>Add to Favorites</button>
+          <button class="expand" id='centralParkExpand'>show/hide</button>
+          <section class="locationDetails" id='centralParkDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+          </section>
+        </section>
+        <section class='location-info venue clearfix'>
+          <img class="locationImage" src="img/apollotheater.jpg">
+          <h1>Apollo Theater</h1>
+          <p class="tags">Venue</p>
+          <p>This is a teaser description</p>
+          <button class='favButton' id='apolloTheaterFav'>Add to Favorites</button>
+          <button class="expand" id='apolloExpand'>show/hide</button>
+          <section class="locationDetails" id='apolloDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+          </section>
+        </section>
+        <section class='location-info outdoor clearfix'>
+          <img class="locationImage" src="img/bronxzoo.jpg">
+          <h1>Bronx Zoo</h1>
+          <p class="tags">Outdoor</p>
+          <p>This is a teaser description</p>
+          <button class='favButton' id='bronxFav'>Add to Favorites</button>
+          <button class="expand" id='bronxZooExpand'>show/hide</button>
+          <section class="locationDetails" id='bronxZooDetails'>
+            <p>This is the full description</p>
+            <address>Here is the address</address>
+          </section>
+        </section>
+      </section>  
+    </main>
+    <section class='filters' id="filterList">
+      <h1>Filter locations:</h1>
+      <ul>
+        <li><input type='checkbox' id='restaurant'>Restaurants</input></li>
+        <li><input type='checkbox' id='landmark'>Landmarks</input></li>
+        <li><input type='checkbox' id='venue'>Venues</input></li>
+        <li><input type='checkbox' id='outdoor'>Outdoor</input></li>
+        <button type='button' id="filterButton">Clear</button>
+      </ul> 
+    </section>
+    <section class='favs'>
+      <h1>Favs</h1>
+      <ul id='favItems'></ul>
+    </section> 
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
