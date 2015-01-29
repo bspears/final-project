@@ -212,19 +212,16 @@ var addFav = function(location) {
 };
 
 $('#spaceNeedleFav').on('click', function() {
-  var value = $(this).val();
   favList.push (seattle.spaceNeedle);
   addFav(seattle.spaceNeedle);
 });
 
 $('#gasFav').on('click', function() {
-  var value = $(this).val();
   favList.push (seattle.gasWorksPark);
   addFav(seattle.gasWorksPark);
 });
 
 $('#pikeFav').on('click', function() {
-  var value = $(this).val();
   favList.push (seattle.pikePlaceMarket);
   addFav(seattle.pikePlaceMarket);
 });
@@ -232,19 +229,16 @@ $('#pikeFav').on('click', function() {
 
 
 $('#centralParkFav').on('click', function() {
-  var value = $(this).val();
   favList.push (newYork.centralPark);
   addFav(newYork.centralPark);
 });
 
 $('#apolloTheaterFav').on('click', function() {
-  var value = $(this).val();
   favList.push (newYork.apolloTheater);
   addFav(newYork.apolloTheater);
 });
 
 $('#bronxFav').on('click', function() {
-  var value = $(this).val();
   favList.push (newYork.bronxZoo);
   addFav(newYork.bronxZoo);
 });
@@ -252,19 +246,16 @@ $('#bronxFav').on('click', function() {
 
 
 $('#crystalBallroomFav').on('click', function() {
-  var value = $(this).val();
   favList.push (portland.crystalBallroom);
   addFav(portland.crystalBallroom);
 });
 
 $('#irvingStreetKitchenFav').on('click', function() {
-  var value = $(this).val();
   favList.push (portland.irvingStreetKitchen);
   addFav(portland.irvingStreetKitchen);
 });
 
 $('#saturdayMarketFav').on('click', function() {
-  var value = $(this).val();
   favList.push (portland.saturdayMarket);
   addFav(portland.saturdayMarket);
 });
@@ -272,19 +263,16 @@ $('#saturdayMarketFav').on('click', function() {
 
 
 $('#theOrangePeelFav').on('click', function() {
-  var value = $(this).val();
   favList.push (asheville.theOrangePeel);
   addFav(asheville.theOrangePeel);
 });
 
 $('#nineMileFav').on('click', function() {
-  var value = $(this).val();
   favList.push (asheville.nineMile);
   addFav(asheville.nineMile);
 });
 
 $('#gardenFav').on('click', function() {
-  var value = $(this).val();
   favList.push (asheville.ashevilleBotanicalGardens);
   addFav(asheville.ashevilleBotanicalGardens);
 });
@@ -292,19 +280,16 @@ $('#gardenFav').on('click', function() {
 
 
 $('#bartonSpringsPoolFav').on('click', function() {
-  var value = $(this).val();
   favList.push (austin.bartonSpringsPool);
   addFav(austin.bartonSpringsPool);
 });
 
 $('#alamoDrafthouseFav').on('click', function() {
-  var value = $(this).val();
   favList.push (austin.alamoDrafthouse);
   addFav(austin.alamoDrafthouse);
 });
 
 $('#umlaufSculptureFav').on('click', function() {
-  var value = $(this).val();
   favList.push (austin.umlaufSculpture);
   addFav(austin.umlaufSculpture);
 });
