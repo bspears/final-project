@@ -2,104 +2,91 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Instant Local</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/main.css">  
   </head>
   <body>
-    <header class='header'>
-      <img src="">
-      <nav>
-        <ul>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>Asheville</h1>
-        <h2>Visit another city:</h2>
-        <select id="city">
-          <option value ="seattle-locations">Seattle, WA</option>
-          <option value="nyc-locations">New York, NY</option>
-          <option value="portland-locations">Portland, OR</option>
-          <option value="austin-locations">Austin, TX</option>
-          <option value="asheville-locations">Asheville, NC</option>
-        </select>
-        <button id="submit">Go!</button>
-      </section>
-      <section class='location-info venue'>
+    <section class="wrapper asheville">
+      <header class='header'>
         <img src="">
-        <h1>The Orange Peel</h1>
-        <ul>
-          <li>Venue</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='theOrangePeelFav'>Add to Favorites</button>
-        <button class="expand" id='orangePeelExpand'>show/hide</button>
-        <section class="locationDetails" id='orangePeelDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
-        </section>
+        <nav>
+          <ul>
+            <li>About</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="cityInfo clearfix">
+          <h1>Asheville</h1>
+          <section class="anotherCity">
+            <h2>Visit another city:</h2>
+            <select id="city">
+              <option value ="seattle-locations">Seattle, WA</option>
+              <option value="nyc-locations">New York, NY</option>
+              <option value="portland-locations">Portland, OR</option>
+              <option value="austin-locations">Austin, TX</option>
+              <option value="asheville-locations">Asheville, NC</option>
+            </select> 
+            <button id="submit">Go!</button>
+          </section>
+        </section>  
+        <section class='locationsContainer clearfix'>
+          <section class='location-info venue'>
+            <img src="">
+            <h1>The Orange Peel</h1>
+            <p class="tags">Venue</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='theOrangePeelFav'>Add to Favorites</button>
+            <button class="expand" id='orangePeelExpand'>show/hide</button>
+            <section class="locationDetails" id='orangePeelDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+          <section class='location-info restaurant'>
+            <img src="">
+            <h1>Nine Mile</h1>
+            <p class="tags">Venue</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='nineMileFav'>Add to Favorites</button>
+            <button class="expand" id='nineMileExpand'>show/hide</button>
+            <section class="locationDetails" id='nineMileDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+          <section class='location-info venue'>
+            <img src="">
+            <h1>Asheville Botanical Gardens</h1>
+            <p class="tags">Venue</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='gardenFav'>Add to Favorites</button>
+            <button class="expand" id='gardensExpand'>show/hide</button>
+            <section class="locationDetails" id='gardensDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+        </section>  
+      </main>
+      <section class='filters' id="filterList">
+        <h1>Filter locations:</h1>
+        <input type='checkbox' id='restaurant'>Restaurants</input>
+        <input type='checkbox' id='landmark'>Landmarks</input>
+        <input type='checkbox' id='venue'>Venues</input>
+        <input type='checkbox' id='outdoor'>Outdoor</input>
+        <button type='button' id="filterButton">Clear Selections</button>
       </section>
-      <section class='location-info restaurant'>
-        <img src="">
-        <h1>Nine Mile</h1>
-        <ul>
-          <li>Restaurant</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='nineMileFav'>Add to Favorites</button>
-        <button class="expand" id='nineMileExpand'>show/hide</button>
-        <section class="locationDetails" id='nineMileDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
-        </section>
       </section>
-      <section class='location-info venue'>
-        <img src="">
-        <h1>Asheville Botanical Gardens</h1>
-        <ul>
-          <li>Venue</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='gardenFav'>Add to Favorites</button>
-        <button class="expand" id='gardensExpand'>show/hide</button>
-        <section class="locationDetails" id='gardensDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
-        </section>
+      <section class='favs'>
+        <h1>Favs</h1>
+        <ul id='favItems'></ul>
       </section>
-    </main>
-    <section class='filters' id="filterList">
-      <h1>Filter locations:</h1>
-      <input type='checkbox' id='restaurant'>Restaurants</input>
-      <input type='checkbox' id='landmark'>Landmarks</input>
-      <input type='checkbox' id='venue'>Venues</input>
-      <input type='checkbox' id='outdoor'>Outdoor</input>
-      <button type='button' id="filterButton">Clear Selections</button>
-    </section>
-    </section>
-    <section id='favs'>
-      <ul id='favItems'></ul>
-    </section>
+    </section>  
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

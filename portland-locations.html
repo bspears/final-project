@@ -2,104 +2,90 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Instant Local</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/main.css">  
   </head>
   <body>
-    <header class='header'>
-      <img src="">
-      <nav>
-        <ul>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>Portland</h1>
-        <h2>Visit another city:</h2>
-        <select id="city">
-          <option value ="seattle-locations">Seattle, WA</option>
-          <option value="nyc-locations">New York, NY</option>
-          <option value="portland-locations">Portland, OR</option>
-          <option value="austin-locations">Austin, TX</option>
-          <option value="asheville-locations">Asheville, NC</option>
-        </select>
-        <button id="submit">Go!</button>
-      </section>
-      <section class='location-info venue'>
+    <section class="wrapper portland">
+      <header class='header'>
         <img src="">
-        <h1>The Crystal Ballroom</h1>
-        <ul>
-          <li>Venue</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='crystalBallroomFav'>Add to Favorites</button>
-        <button class="expand" id='crystalBallExpand'>show/hide</button>
-        <section class="locationDetails" id='crystalBallDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
+        <nav>
+          <ul>
+            <li>About</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="cityInfo clearfix">
+          <h1>Portland</h1>
+          <section class="anotherCity">
+            <h2>Visit another city:</h2>
+            <select id="city">
+              <option value ="seattle-locations">Seattle, WA</option>
+              <option value="nyc-locations">New York, NY</option>
+              <option value="portland-locations">Portland, OR</option>
+              <option value="austin-locations">Austin, TX</option>
+              <option value="asheville-locations">Asheville, NC</option>
+            </select>
+            <button id="submit">Go!</button>
+          </section>  
         </section>
+        <section class='locationsContainer clearfix'>
+          <section class='location-info venue'>
+            <img src="">
+            <h1>The Crystal Ballroom</h1>
+            <p class="tags">Venue</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='crystalBallroomFav'>Add to Favorites</button>
+            <button class="expand" id='crystalBallExpand'>show/hide</button>
+            <section class="locationDetails" id='crystalBallDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+          <section class='location-info restaurant'>
+            <img src="">
+            <h1>Irving Street Kitchen</h1>
+            <p class="tags">Restaurant</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='irvingStreetKitchenFav'>Add to Favorites</button>
+            <button class="expand" id='irvingStreetExpand'>show/hide</button>
+            <section class="locationDetails" id='irvingStreetDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+          <section class='location-info landmark outdoors'>
+            <img src="">
+            <h1>Saturday Market</h1>
+            <p class="tags">Venue</p>
+            <p>This is a teaser description</p>
+            <button class='favButton' id='saturdayMarketFav'>Add to Favorites</button>
+            <button class="expand" id='saturdayExpand'>show/hide</button>
+            <section class="locationDetails" id='saturdayDetails'>
+              <p>This is the full description</p>
+              <address>Here is the address</address>
+            </section>
+          </section>
+        </section>  
+      </main>
+      <section class='filters' id="filterList">
+        <h1>Filter locations:</h1>
+        <input type='checkbox' id='restaurant'>Restaurants</input>
+        <input type='checkbox' id='landmark'>Landmarks</input>
+        <input type='checkbox' id='venue'>Venues</input>
+        <input type='checkbox' id='outdoor'>Outdoor</input>
+        <button type='button' id="filterButton">Clear Selections</button>
       </section>
-      <section class='location-info restaurant'>
-        <img src="">
-        <h1>Irving Street Kitchen</h1>
-        <ul>
-          <li>Restaurant</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='irvingStreetKitchenFav'>Add to Favorites</button>
-        <button class="expand" id='irvingStreetExpand'>show/hide</button>
-        <section class="locationDetails" id='irvingStreetDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
-        </section>
       </section>
-      <section class='location-info landmark outdoors'>
-        <img src="">
-        <h1>Saturday Market</h1>
-        <ul>
-          <li>Venue</li>
-        </ul>
-        <p>This is a teaser description</p>
-        <button class='favButton' id='saturdayMarketFav'>Add to Favorites</button>
-        <button class="expand" id='saturdayExpand'>show/hide</button>
-        <section class="locationDetails" id='saturdayDetails'>
-          <p>This is the full description</p>
-          <address>Here is the address</address>
-          <form>
-            <p>Comment:</p>
-            <textarea maxlength="600" rows="7" cols="50">Leave your comment here.</textarea>
-            <button class="commentSubmit">Submit</button>
-          </form>
-        </section>
+      <section id='favs'>
+        <ul id='favItems'></ul>
       </section>
-    </main>
-    <section class='filters' id="filterList">
-      <h1>Filter locations:</h1>
-      <input type='checkbox' id='restaurant'>Restaurants</input>
-      <input type='checkbox' id='landmark'>Landmarks</input>
-      <input type='checkbox' id='venue'>Venues</input>
-      <input type='checkbox' id='outdoor'>Outdoor</input>
-      <button type='button' id="filterButton">Clear Selections</button>
-    </section>
-    </section>
-    <section id='favs'>
-      <ul id='favItems'></ul>
-    </section>
+    </section>  
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
