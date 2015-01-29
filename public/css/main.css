@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:400|Playfair+Display|Vollkorn);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400|Roboto);
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -33,17 +32,19 @@ body {
   background-image: url('../img/newyork.jpeg')
 }
 
-.homeMain {
-padding: 15%;
+.backgroundBand {
+  background-color: rgba(61, 61, 61, 0.4);
+  margin-top: 16%;
+  padding-left: 15%;
 }
 
-.homeMain h1 {
+.backgroundBand h1 {
   font-size: 3.5em;
   font-family: 'Dosis', sans-serif;
   margin-bottom: 0;
 }
 
-.homeMain h2 {
+.backgroundBand h2 {
   font-size: 2em;
   font-family: 'Dosis', sans-serif;
   margin-top: 1%;
@@ -117,6 +118,12 @@ nav a {
   font-family: 'Dosis', sans-serif;
 }
 
+.locationDetails {
+  width: 69%;
+  float: right;
+  padding-right: 2%;
+}
+
 .filters {
   font-size: 0.9em;
   border-radius: 10px;
@@ -152,6 +159,9 @@ nav a {
   background-color: rgba(2, 32, 39, 0.9);
 }
 
+.favButton {
+  margin-left: 0;
+}
 
 button {
   border: 2px solid #FFF;
