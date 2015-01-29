@@ -166,137 +166,151 @@ $(document).ready(function() {
 
 });
 
-
 function Location(name, city) {
   this.name = name;
   this.city = city;
 };
 
-var seattle = {
+var locations = {
   spaceNeedle:               new Location('Space Needle', 'Seattle'),
   gasWorksPark:              new Location('Gas Works Park', 'Seattle'),
   pikePlaceMarket:           new Location('Pike Place Market', 'Seattle'),
-};
-
-var newYork = {
   centralPark:               new Location('Central Park', 'New York'),
   apolloTheater:             new Location('Apollo Theater', 'New York'),
   bronxZoo:                  new Location('Bronx Zoo', 'New York'),
-};
-
-var portland = {
   crystalBallroom:           new Location('The Crystal Ballroom', 'Portland'),
   irvingStreetKitchen:       new Location('Irving Street Kitchen', 'Portland' ),
   saturdayMarket:            new Location('Saturday Market', 'Portland' ),
-};
-
-var austin = {
   bartonSpringsPool:         new Location('Barton Springs Pool', 'Austin'),
   alamoDrafthouse:           new Location('Alamo Drafthouse', 'Austin'),
   umlaufSculpture:           new Location('Umlauf Sculpture Garden and Museum', 'Austin'),
-};
-
-var asheville = {
   theOrangePeel:             new Location('The Orange Peel', 'Asheville'),
   nineMile:                  new Location('Nine Mile', 'Asheville'),
   ashevilleBotanicalGardens: new Location('Asheville Botanical Gardens', 'Asheville')
 };
 
 
-var favList = [];
-
-
-var addFav = function(location) {
-  var last = favList.length-1;
-  $('#favItems').append('<li>' + favList[last].name + '</li>');
+var data = {
+ "favList": []
 };
 
-$('#spaceNeedleFav').on('click', function() {
-  favList.push (seattle.spaceNeedle);
-  addFav(seattle.spaceNeedle);
+
+  // var storedFavs = JSON.parse(data['favList']);
+
+var addFav = function(location) {
+  var last = data['favList'].length-1;
+  $('#favItems').append('<li>' +  + '</li>');
+};
+
+$('.favButton').on('click', function() {
+  data['favList'].push (locations[this.id]);
+  addFav(locations[this.id]);
 });
 
-$('#gasFav').on('click', function() {
-  favList.push (seattle.gasWorksPark);
-  addFav(seattle.gasWorksPark);
-});
+// $('#gasFav').on('click', function() {
+//   data['favList'].push (seattle.gasWorksPark);
+//   addFav(seattle.gasWorksPark);
+// });
 
-$('#pikeFav').on('click', function() {
-  favList.push (seattle.pikePlaceMarket);
-  addFav(seattle.pikePlaceMarket);
-});
-
-
-
-$('#centralParkFav').on('click', function() {
-  favList.push (newYork.centralPark);
-  addFav(newYork.centralPark);
-});
-
-$('#apolloTheaterFav').on('click', function() {
-  favList.push (newYork.apolloTheater);
-  addFav(newYork.apolloTheater);
-});
-
-$('#bronxFav').on('click', function() {
-  favList.push (newYork.bronxZoo);
-  addFav(newYork.bronxZoo);
-});
+// $('#pikeFav').on('click', function() {
+//   data['favList'].push (seattle.pikePlaceMarket);
+//   addFav(seattle.pikePlaceMarket);
+// });
 
 
 
-$('#crystalBallroomFav').on('click', function() {
-  favList.push (portland.crystalBallroom);
-  addFav(portland.crystalBallroom);
-});
+// $('#centralParkFav').on('click', function() {
+//   data['favList'].push (newYork.centralPark);
+//   addFav(newYork.centralPark);
+// });
 
-$('#irvingStreetKitchenFav').on('click', function() {
-  favList.push (portland.irvingStreetKitchen);
-  addFav(portland.irvingStreetKitchen);
-});
+// $('#apolloTheaterFav').on('click', function() {
+//   data['favList'].push (newYork.apolloTheater);
+//   addFav(newYork.apolloTheater);
+// });
 
-$('#saturdayMarketFav').on('click', function() {
-  favList.push (portland.saturdayMarket);
-  addFav(portland.saturdayMarket);
-});
-
-
-
-$('#theOrangePeelFav').on('click', function() {
-  favList.push (asheville.theOrangePeel);
-  addFav(asheville.theOrangePeel);
-});
-
-$('#nineMileFav').on('click', function() {
-  favList.push (asheville.nineMile);
-  addFav(asheville.nineMile);
-});
-
-$('#gardenFav').on('click', function() {
-  favList.push (asheville.ashevilleBotanicalGardens);
-  addFav(asheville.ashevilleBotanicalGardens);
-});
+// $('#bronxFav').on('click', function() {
+//   data['favList'].push (newYork.bronxZoo);
+//   addFav(newYork.bronxZoo);
+// });
 
 
 
-$('#bartonSpringsPoolFav').on('click', function() {
-  favList.push (austin.bartonSpringsPool);
-  addFav(austin.bartonSpringsPool);
-});
+// $('#crystalBallroomFav').on('click', function() {
+//   data['favList'].push (portland.crystalBallroom);
+//   addFav(portland.crystalBallroom);
+// });
 
-$('#alamoDrafthouseFav').on('click', function() {
-  favList.push (austin.alamoDrafthouse);
-  addFav(austin.alamoDrafthouse);
-});
+// $('#irvingStreetKitchenFav').on('click', function() {
+//   data['favList'].push (portland.irvingStreetKitchen);
+//   addFav(portland.irvingStreetKitchen);
+// });
 
-$('#umlaufSculptureFav').on('click', function() {
-  favList.push (austin.umlaufSculpture);
-  addFav(austin.umlaufSculpture);
-});
+// $('#saturdayMarketFav').on('click', function() {
+//   data['favList'].push (portland.saturdayMarket);
+//   addFav(portland.saturdayMarket);
+// });
+
+
+
+// $('#theOrangePeelFav').on('click', function() {
+//   data['favList'].push (asheville.theOrangePeel);
+//   addFav(asheville.theOrangePeel);
+// });
+
+// $('#nineMileFav').on('click', function() {
+//   data['favList'].push (asheville.nineMile);
+//   addFav(asheville.nineMile);
+// });
+
+// $('#gardenFav').on('click', function() {
+//   data['favList'].push (asheville.ashevilleBotanicalGardens);
+//   addFav(asheville.ashevilleBotanicalGardens);
+// });
+
+
+
+// $('#bartonSpringsPoolFav').on('click', function() {
+//   data['favList'].push (austin.bartonSpringsPool);
+//   addFav(austin.bartonSpringsPool);
+// });
+
+// $('#alamoDrafthouseFav').on('click', function() {
+//   data['favList'].push (austin.alamoDrafthouse);
+//   addFav(austin.alamoDrafthouse);
+// });
+
+// $('#umlaufSculptureFav').on('click', function() {
+//   data['favList'].push (austin.umlaufSculpture);
+//   addFav(austin.umlaufSculpture);
+// });
 
 // $('.favButton').on('click', function() {
 //     var place;
 //     $('#favItems').append('<li>' + event.currenttarget.value + '</li>');
 //   });
+
+
+//JSON-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
