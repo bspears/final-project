@@ -1,16 +1,12 @@
-
 body {
   font-family: 'Questrial', sans-serif;
   color: #FFF;
-}
-
-.wrapper {
   background-repeat: none;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.newyork {
+.homeBackground {
   background-image: url('../img/newyorksky.jpg');
 }
 
