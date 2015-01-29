@@ -6,20 +6,6 @@ $(document).ready(function() {
 
 
 // City Page------------------------------------
-  
-
-
-  // var locations 
-
-  function Location(name) {
-    this.name = name;
-  };
-
-  $('.place').text().each(function() {
-    new Location(this.text);
-  });
-
-
 
   $('.locationDetails').hide();
 
@@ -178,33 +164,154 @@ $(document).ready(function() {
 
 // Favorite list----------------------------------
 
-
-// var favList = {
-//   locations: [];
-// }
-
-// var addFav = function(location) {
-
-// };
-
-
-
-// $('#spaceNeedleFav').on('click', addFav);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
+
+function Location(name, city) {
+  this.name = name;
+  this.city = city;
+};
+
+var seattle = {
+  spaceNeedle:               new Location('Space Needle', 'Seattle'),
+  gasWorksPark:              new Location('Gas Works Park', 'Seattle'),
+  pikePlaceMarket:           new Location('Pike Place Market', 'Seattle'),
+};
+
+var newYork = {
+  centralPark:               new Location('Central Park', 'New York'),
+  apolloTheater:             new Location('Apollo Theater', 'New York'),
+  bronxZoo:                  new Location('Bronx Zoo', 'New York'),
+};
+
+var portland = {
+  crystalBallroom:           new Location('The Crystal Ballroom', 'Portland'),
+  irvingStreetKitchen:       new Location('Irving Street Kitchen', 'Portland' ),
+  saturdayMarket:            new Location('Saturday Market', 'Portland' ),
+};
+
+var austin = {
+  bartonSpringsPool:         new Location('Barton Springs Pool', 'Austin'),
+  alamoDrafthouse:           new Location('Alamo Drafthouse', 'Austin'),
+  umlaufSculpture:           new Location('Umlauf Sculpture Garden and Museum', 'Austin'),
+};
+
+var asheville = {
+  theOrangePeel:             new Location('The Orange Peel', 'Asheville'),
+  nineMile:                  new Location('Nine Mile', 'Asheville'),
+  ashevilleBotanicalGardens: new Location('Asheville Botanical Gardens', 'Asheville')
+};
+
+
+var favList = [];
+
+
+var addFav = function(location) {
+  var last = favList.length-1;
+  $('#favItems').append('<li>' + favList[last].name + '</li>');
+};
+
+$('#spaceNeedleFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (seattle.spaceNeedle);
+  addFav(seattle.spaceNeedle);
+});
+
+$('#gasFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (seattle.gasWorksPark);
+  addFav(seattle.gasWorksPark);
+});
+
+$('#pikeFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (seattle.pikePlaceMarket);
+  addFav(seattle.pikePlaceMarket);
+});
+
+
+
+$('#centralParkFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (newYork.centralPark);
+  addFav(newYork.centralPark);
+});
+
+$('#apolloTheaterFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (newYork.apolloTheater);
+  addFav(newYork.apolloTheater);
+});
+
+$('#bronxFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (newYork.bronxZoo);
+  addFav(newYork.bronxZoo);
+});
+
+
+
+$('#crystalBallroomFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (portland.crystalBallroom);
+  addFav(portland.crystalBallroom);
+});
+
+$('#irvingStreetKitchenFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (portland.irvingStreetKitchen);
+  addFav(portland.irvingStreetKitchen);
+});
+
+$('#saturdayMarketFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (portland.saturdayMarket);
+  addFav(portland.saturdayMarket);
+});
+
+
+
+$('#theOrangePeelFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (asheville.theOrangePeel);
+  addFav(asheville.theOrangePeel);
+});
+
+$('#nineMileFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (asheville.nineMile);
+  addFav(asheville.nineMile);
+});
+
+$('#gardenFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (asheville.ashevilleBotanicalGardens);
+  addFav(asheville.ashevilleBotanicalGardens);
+});
+
+
+
+$('#bartonSpringsPoolFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (austin.bartonSpringsPool);
+  addFav(austin.bartonSpringsPool);
+});
+
+$('#alamoDrafthouseFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (austin.alamoDrafthouse);
+  addFav(austin.alamoDrafthouse);
+});
+
+$('#umlaufSculptureFav').on('click', function() {
+  var value = $(this).val();
+  favList.push (austin.umlaufSculpture);
+  addFav(austin.umlaufSculpture);
+});
+
+// $('.favButton').on('click', function() {
+//     var place;
+//     $('#favItems').append('<li>' + event.currenttarget.value + '</li>');
+//   });
+
+
