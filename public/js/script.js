@@ -206,9 +206,12 @@ var asheville = {
 var favList = [];
 
 
+var storedFavs = JSON.parse(localStorage['favList']);
+
 var addFav = function(location) {
   var last = favList.length-1;
   $('#favItems').append('<li>' + favList[last].name + '</li>');
+  localStorage['favList'] = JSON.stringify(favList);
 };
 
 $('#spaceNeedleFav').on('click', function() {
@@ -298,5 +301,28 @@ $('#umlaufSculptureFav').on('click', function() {
 //     var place;
 //     $('#favItems').append('<li>' + event.currenttarget.value + '</li>');
 //   });
+
+
+//JSON-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
