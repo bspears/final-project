@@ -430,3 +430,10 @@ td,
 th {
   padding: 0;
 }
+
+/*Clear Fix*/
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}

@@ -1,12 +1,21 @@
 
 body {
   font-family: 'Questrial', sans-serif;
+  color: #FFF;
 }
 
 .wrapper {
-  background-image: url('../img/newyorksky.jpg');
   background-repeat: none;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.newyork {
+  background-image: url('../img/newyorksky.jpg');
+}
+
+.seattle {
+  background-image: url('../img/seattle.jpg')
 }
 
 .homeMain {
@@ -39,11 +48,14 @@ nav a {
 
 .cityInfo {
   text-align: center;
+  margin: 0 15%;
 }
 
 .locationImage {
-  border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 10px;
   width: 25%;
+  float: left;
+  margin-right: 3.5%;
 }
 
 .locationsContainer {
@@ -57,25 +69,21 @@ nav a {
 }
 
 .location-info h1 {
-  margin: 0;
-  padding: 0;
+  padding-top: 2%;
 }
 
 .filters {
   border-radius: 10px;
   position: fixed;
-  top: 25%;
+  top: 26.3%;
   right: 5%;
   padding: 1% 1%;
-  width: 7%;
-  background-color: rgba(93, 100, 101, 0.81);
-
+  width: 8%;
+  background-color: rgba(1, 116, 106, 0.9);
 }
 
 .filters h1{
-  color: #fff;
   font-size: 0.9em;
-
 }
 
 .filters ul{
@@ -83,9 +91,43 @@ nav a {
 }
 
 .filters li {
-  color: #fff;
   display: block;
   margin: 0 auto;
   list-style-position: inside;
-  width:105px;
 }
+
+button {
+  border: 2px solid #FFF;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: 0;
+  margin: 1%;
+}
+
+button:hover {
+  background-color: rgba(256, 256, 256, 0.4);
+}
+
+.cityInfo h1 {
+  float: left;
+  font-size: 48px;
+}
+
+.anotherCity {
+  float: right;
+  margin-right: 6%;
+  padding-top: 2%;
+} 
+
+.anotherCity h2 {
+  margin-bottom: 10px;
+}
+
+.tags {
+  background-color: rgba(1, 116, 106, 0.7);
+  display: inline;
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+
