@@ -1,5 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400|Playfair+Display|Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 body {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #FFF;
   background-repeat: none;
   background-size: cover;
@@ -36,11 +39,26 @@ padding: 15%;
 
 .homeMain h1 {
   font-size: 3.5em;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 0;
 }
 
 .homeMain h2 {
-  font-size: 3em;
-  color: #fff;
+  font-size: 2em;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 1%;
+  padding-left: 2%;
+}
+
+.citySelector {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5%;
+}
+
+.citySelector p {
+  font-size: 1.15em;
+  float: left;
+  padding-right: 3%;
 }
 
 .header {
@@ -52,10 +70,12 @@ select {
   border: 1px solid #fff;
   border-radius: 5px;
   background-image: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 select option {
-  background: transparent;
+  background: solid;
+  color:black;
 }
 
 nav {
@@ -67,6 +87,7 @@ nav {
 
 nav a {
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .cityInfo {
@@ -93,6 +114,7 @@ nav a {
 
 .location-info h1 {
   padding-top: 2%;
+  font-family: 'Dosis', sans-serif;
 }
 
 .filters {
@@ -150,7 +172,8 @@ button:active {
 
 .cityInfo h1 {
   float: left;
-  font-size: 48px;
+  font-size: 3.5em;
+  font-family: 'Dosis', sans-serif;
 }
 
 .anotherCity {
@@ -161,6 +184,8 @@ button:active {
 
 .anotherCity h2 {
   margin-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.25em;
 }
 
 .tags {
@@ -170,3 +195,7 @@ button:active {
   border-radius: 4px;
 }
 
+#submit {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
