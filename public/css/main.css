@@ -8,6 +8,10 @@ body {
   background-attachment: fixed;
 }
 
+.logo {
+  width: 8%;
+}
+
 .homeBackground {
   background-image: url('../img/newyorksky.jpg');
 }
@@ -62,8 +66,8 @@ body {
   padding-right: 3%;
 }
 
-.header {
-
+.hidden {
+  width: 65%;
 }
 
 select {
