@@ -90,12 +90,14 @@ var data = {
 var jsonFavs;
 
 var setFavs = (function () {
-  var savedPlaces = [];
-  var parse = JSON.parse(localStorage['storedFavs']);
-  $.each(parse.favList, function() {
-    savedPlaces.push ('<li>'+ this.name +'<li>')
-  });
-  $('#favItems').html(savedPlaces.join(' '));
+  if (localStorage.storedFavs != undefined) {
+    var savedPlaces = [];
+    var parse = JSON.parse(localStorage['storedFavs']);
+    $.each(parse.favList, function() {
+      savedPlaces.push ('<li>'+ this.name +'<li>')
+    });
+    $('#favItems').html(savedPlaces.join(' '));
+  };
 }());
 
 $('.favButton').on('click', function() {
