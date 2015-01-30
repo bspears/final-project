@@ -203,6 +203,17 @@ button:active {
   background-color: rgba(256, 256, 256, 0.8);
 }
 
+.about {
+  border: none;
+  background: none;
+}
+
+.about:hover, .about:active {
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+
 .cityInfo h1 {
   float: left;
   font-size: 3.5em;
